@@ -7,6 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Rectangle Fill="#FF0D759C" HorizontalAlignment="Left" Height="355" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="275"/>
+        <Label Content="Первая комната" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Длина" HorizontalAlignment="Left" Margin="26,64,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Ширина" HorizontalAlignment="Left" Margin="26,114,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Число человек" HorizontalAlignment="Left" Margin="26,164,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Периметр" HorizontalAlignment="Left" Margin="26,212,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Площадь" HorizontalAlignment="Left" Margin="26,260,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Метраж" HorizontalAlignment="Left" Margin="26,308,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelLength" HorizontalAlignment="Left" Margin="194,76,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelWidth" HorizontalAlignment="Left" Margin="194,126,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelPersonNumber" HorizontalAlignment="Left" Margin="194,176,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelPerimeter" HorizontalAlignment="Left" Margin="194,224,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelSquare" HorizontalAlignment="Left" Margin="194,272,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelSize" HorizontalAlignment="Left" Margin="194,320,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Rectangle Fill="#FF9C0D0D" HorizontalAlignment="Left" Height="355" Margin="334,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="275"/>
+        <Label Content="Вторая комната" HorizontalAlignment="Left" Margin="350,10,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Длина" HorizontalAlignment="Left" Margin="350,64,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Ширина" HorizontalAlignment="Left" Margin="350,114,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Число человек" HorizontalAlignment="Left" Margin="350,164,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Периметр" HorizontalAlignment="Left" Margin="350,212,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Площадь" HorizontalAlignment="Left" Margin="350,260,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Метраж" HorizontalAlignment="Left" Margin="350,308,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelLength_Copy" HorizontalAlignment="Left" Margin="518,76,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelWidth_Copy" HorizontalAlignment="Left" Margin="518,126,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelPersonNumber_Copy" HorizontalAlignment="Left" Margin="518,176,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelPerimeter_Copy" HorizontalAlignment="Left" Margin="518,224,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelSquare_Copy" HorizontalAlignment="Left" Margin="518,272,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelSize_Copy" HorizontalAlignment="Left" Margin="518,320,0,0" VerticalAlignment="Top" FontSize="16"/>
+
     </Grid>
 </Window>
