@@ -59,12 +59,12 @@ namespace RoomExampleStyopkin03PRd4310
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
         }
 
         private void ButtonAll_Click(object sender, RoutedEventArgs e)
         {
-
+            LabelAllArea.Content = room1.RoomArea() + room2.RoomArea();
         }
     }
 }

@@ -37,10 +37,11 @@
         <Label x:Name="LabelPersonArea2" HorizontalAlignment="Left" Margin="518,242,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Button x:Name="ExitButton" Content="Выход" HorizontalAlignment="Left" Margin="676,10,0,0" VerticalAlignment="Top" Width="75" FontSize="20" Click="ExitButton_Click"/>
         <Button x:Name="ButtonOpen1" Content="Открыть" HorizontalAlignment="Left" Margin="10,293,0,0" VerticalAlignment="Top" FontSize="20" Width="93" Click="ButtonOpen1_Click"/>
-        <Button x:Name="ButtonOpen2" Content="Открыть" HorizontalAlignment="Left" Margin="334,293,0,0" VerticalAlignment="Top" FontSize="20" Width="93" Click="ButtonOpen2_Click"/>
+        <Button x:Name="ButtonOpen2" Content="Открыть" HorizontalAlignment="Left" Margin="334,293,0,0" VerticalAlignment="Top" FontSize="20" Width="93" Click="ButtonOpen2_Click" IsEnabled="False"/>
         <Button x:Name="ButtonAll" Content="Посчитать вместе" HorizontalAlignment="Left" Margin="10,337,0,0" VerticalAlignment="Top" FontSize="20" Width="185" Click="ButtonAll_Click" IsEnabled="False"/>
         <Label Content="Общая площадь:" HorizontalAlignment="Left" Margin="210,335,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
         <Label x:Name="ButtonAllArea" HorizontalAlignment="Left" Margin="387,397,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LabelAllArea" HorizontalAlignment="Left" Margin="410,335,0,0" VerticalAlignment="Top" FontSize="20"/>
 
     </Grid>
 </Window>
