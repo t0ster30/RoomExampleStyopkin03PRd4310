@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RoomLibraryStyopkin03PRd4310">
+      <HintPath>..\RoomLibraryStyopkin03PRd4310\obj\Debug\RoomLibraryStyopkin03PRd4310.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
