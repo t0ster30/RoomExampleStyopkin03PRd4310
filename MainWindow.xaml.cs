@@ -21,40 +21,13 @@ namespace RoomExampleStyopkin03PRd4310
     /// </summary>
     public partial class MainWindow : Window
     {
-        Room room1 = new Room();
-        Room room2 = new Room();
+        Room room = new Room();
+        LivingRoom livingRoom = new LivingRoom();
+        Office office = new Office();
         Random rnd = new Random();
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void ButtonOpen1_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonOpen2.IsEnabled = true;
-            room1.RoomLength = rnd.Next(2, 11);
-            room1.RoomWidth = rnd.Next(2, 11);
-            int numP = rnd.Next(1, 9);
-
-            LabelLength1.Content = room1.RoomLength;
-            LabelWidth1.Content = room1.RoomWidth;
-            LabelNumPerson1.Content = numP;
-
-            LabelPerimeter1.Content = room1.RoomPerimetr();
-            LabelArea1.Content = room1.RoomArea();
-            LabelPersonArea1.Content = Math.Round(room1.PersonArea(numP),3);
-        }
-
-        private void ButtonOpen2_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonAll.IsEnabled = true;
-            room2.RoomLength = Convert.ToDouble(TBLength2.Text);
-            room2.RoomWidth = Convert.ToDouble(TBWidth2.Text);
-            int numP = Convert.ToInt32(TBNumPerson2.Text);
-
-            LabelPerimeter2.Content = room2.RoomPerimetr();
-            LabelArea2.Content = room2.RoomArea();
-            LabelPersonArea2.Content = Math.Round(room2.PersonArea(numP), 3);
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -62,9 +35,32 @@ namespace RoomExampleStyopkin03PRd4310
             Application.Current.Shutdown();
         }
 
-        private void ButtonAll_Click(object sender, RoutedEventArgs e)
+        private void BAddRoom_Click(object sender, RoutedEventArgs e)
         {
-            LabelAllArea.Content = room1.RoomArea() + room2.RoomArea();
+            room.RoomLength = Convert.ToDouble(TBLengthR.Text);
+            room.RoomWidth = Convert.ToDouble(TBWidthR.Text);
+        }
+
+        private void BAddLivingRoom_Click(object sender, RoutedEventArgs e)
+        {
+            livingRoom.RoomLength = Convert.ToDouble(TBLengthL.Text);
+            livingRoom.RoomWidth = Convert.ToDouble(TBWidthL.Text);
+            livingRoom.NumWin = Convert.ToInt32(TBNumW.Text);
+        }
+
+        private void BAddOffice_Click(object sender, RoutedEventArgs e)
+        {
+            office.RoomLength = Convert.ToDouble(TBLengthO.Text);
+            office.RoomWidth = Convert.ToDouble(TBWidthO.Text);
+            office.NumSockets = Convert.ToInt32(TBNumS.Text);
+        }
+
+        private void BGetList_Click(object sender, RoutedEventArgs e)
+        {
+            ListRooms.Content = "";
+            ListRooms.Content += room.Info() + "\n";
+            ListRooms.Content += livingRoom.Info() + "\n";
+            ListRooms.Content += office.Info();
         }
     }
 }
