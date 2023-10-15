@@ -21,10 +21,8 @@ namespace RoomExampleStyopkin03PRd4310
     /// </summary>
     public partial class MainWindow : Window
     {
-        Room room = new Room();
-        LivingRoom livingRoom = new LivingRoom();
-        Office office = new Office();
-        Random rnd = new Random();
+
+        List<Room> lstRooms = new List<Room>(); // создаём список комнат
         public MainWindow()
         {
             InitializeComponent();
@@ -37,30 +35,36 @@ namespace RoomExampleStyopkin03PRd4310
 
         private void BAddRoom_Click(object sender, RoutedEventArgs e)
         {
+            Room room = new Room();
             room.RoomLength = Convert.ToDouble(TBLengthR.Text);
             room.RoomWidth = Convert.ToDouble(TBWidthR.Text);
+            lstRooms.Add(room); // добавляем в список
         }
 
         private void BAddLivingRoom_Click(object sender, RoutedEventArgs e)
         {
+            LivingRoom livingRoom = new LivingRoom();
             livingRoom.RoomLength = Convert.ToDouble(TBLengthL.Text);
             livingRoom.RoomWidth = Convert.ToDouble(TBWidthL.Text);
             livingRoom.NumWin = Convert.ToInt32(TBNumW.Text);
+            lstRooms.Add(livingRoom); // добавляем в список
         }
 
         private void BAddOffice_Click(object sender, RoutedEventArgs e)
         {
+            Office office = new Office();
             office.RoomLength = Convert.ToDouble(TBLengthO.Text);
             office.RoomWidth = Convert.ToDouble(TBWidthO.Text);
             office.NumSockets = Convert.ToInt32(TBNumS.Text);
+            lstRooms.Add(office); // добавляем в список
         }
 
         private void BGetList_Click(object sender, RoutedEventArgs e)
         {
             ListRooms.Content = "";
-            ListRooms.Content += room.Info() + "\n";
-            ListRooms.Content += livingRoom.Info() + "\n";
-            ListRooms.Content += office.Info();
+            // вывод информации из списка
+            foreach (Room r in lstRooms)
+                ListRooms.Content += r.Info() + "\n";
         }
     }
 }
